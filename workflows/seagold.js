@@ -426,15 +426,15 @@ async function run(args) {
   });
 }
 
-run(process.argv.splice(2)).catch((error) => {
-  pushMessage({
-    subject: "海底掘金游戏",
-    html: `
-<strong>Error</strong>
-<pre>${error.message}</pre>
-<div>如果版本过低请前往升级: <a href="https://github.com/iDerekLi/juejin-helper">juejin-helper</a></div>
-`.trim()
-  });
+// run(process.argv.splice(2)).catch((error) => {
+//   pushMessage({
+//     subject: "海底掘金游戏",
+//     html: `
+// <strong>Error</strong>
+// <pre>${error.message}</pre>
+// <div>如果版本过低请前往升级: <a href="https://github.com/iDerekLi/juejin-helper">juejin-helper</a></div>
+// `.trim()
+//   });
 
-  throw error;
-});
+//   throw error;
+// });
